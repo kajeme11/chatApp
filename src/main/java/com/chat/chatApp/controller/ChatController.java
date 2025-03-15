@@ -22,7 +22,7 @@ public class ChatController {
      * @return
      */
     @MessageMapping("/sendMessage")
-    @SendTo("/topic/message")
+    @SendTo("/topic/message") //BROADCAST TO TOPIC/MESSAGE
     public ChatMessage sendMessage(ChatMessage chatMessage){
         return chatMessage;
     }
